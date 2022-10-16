@@ -3,24 +3,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 h1 {
     font-size: 55px;
     line-height: 64px;
-    color: rgba(86, 1, 134, 0.973);
+    color: #222;
 }
 
 h2 {
     font-size: 46px;
     line-height: 54px;
-    color: rgba(18, 89, 240, 0.973);
+    color: #222;
 }
 
 h4 {
     font-size: 30px;
-    color: rgba(18, 89, 240, 0.973);
+    color: #222;
 }
 
 h6 {
@@ -42,6 +42,51 @@ P {
     margin: 40px 0;
 }
 
+.button-29 {
+    align-items: center;
+    appearance: none;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border: 0;
+    border-radius: 6px;
+    box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: "JetBrains Mono",monospace;
+    height: 48px;
+    justify-content: center;
+    line-height: 1;
+    list-style: none;
+    overflow: hidden;
+    padding-left: 16px;
+    padding-right: 16px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    transition: box-shadow .15s,transform .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    will-change: box-shadow,transform;
+    font-size: 18px;
+  }
+  
+  .button-29:focus {
+    box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  }
+  
+  .button-29:hover {
+    box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+    transform: translateY(-2px);
+  }
+  
+  .button-29:active {
+    box-shadow: #3c4fe0 0 3px 7px inset;
+    transform: translateY(2px);
+  }
+
 body {
     width: 100%;
 }
@@ -52,9 +97,14 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding-top: 7px;
+    padding: 3px 80px;
     background: #E3E6F3;
-    box-shadow: 0 3px 5px rgba(0, 0, 0.03);
+    box-shadow: 0 1px 5px rgb(0, 0, 0.9);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 #navbar {
@@ -65,7 +115,7 @@ body {
 
 #navbar li{
     list-style: none;
-    padding: 0 20px;
+    padding: 0 10px;
     position: relative;
 }
 
@@ -96,24 +146,126 @@ body {
 /* home page */
 
 #main {
-    background-image: url("img/vacay.jpg");
-    height: 90vh;
+    background-image: url("img/vacay.jpeg");
+    height: 100vh;
     width: 100%;
     background-position: top 25% right 0;
     background-size: cover;
     padding: 0 80px;
-    padding-left: 300px;
-    padding-bottom: 440px;
+    padding-left: 17%;
+    padding-bottom: 10%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
+#main h1 {
+    font-size: 43px;
+    padding-bottom: 15px;
+    color: #088178;
+}
+
+#main h2 {
+    font-size: 25px;
+}
+
+#main h4{
+    font-size: 23px;
+    padding-bottom: 20px;
+}
+
 #main button{
     background-image: url("img/button.png");
     background-color: transparent;
-    color: #088178;
+    color: #08ecdd;
     border: 0;
     padding: 14px 80px 14px 65px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* features */
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 3%;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.3);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 7px 7px 55px rgba(70, 62, 221, 0.1);
+}
+
+#feature .fe-box h6 {
+    display: inline-block;
+    padding: 5px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #928bf3;
+}
+
+#feature .fe-box:nth-child(2) h6 {
+    background-color: #24f8d5;
+}
+
+#feature .fe-box:nth-child(3) h6 {
+    background-color: #ff00bf;
+}
+
+#feature .fe-box:nth-child(4) h6 {
+    background-color: #1cff08;
+}
+
+
+#feature .fe-box img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* footer */
+
+
+/* organizer */
+
+/* banner */
+
+#org_main {
+    background-image: url("img/banner/travel_sticker_banner.jpeg");
+    width: 100%;
+    height: 27vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+/* form */
+
+#organizer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#organizer from {
+    width: 60%;
 }
