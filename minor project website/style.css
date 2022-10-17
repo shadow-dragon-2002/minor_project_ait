@@ -302,3 +302,21 @@ select[id=to] {
     padding-left: 15px;
     padding-top: 10px;
 }
+
+#submit {
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+/* booking cart */
+
+#booking_title {
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+#booking_title h1 {
+    color: #08ecdd;
+}
