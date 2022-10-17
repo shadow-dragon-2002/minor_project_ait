@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "../node_modules/bootstrap/scss/bootstrap";
 *{
     margin: 0;
     padding: 0;
@@ -260,12 +261,44 @@ body {
 
 /* form */
 
-#organizer {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+
+input[type=text]:focus {
+    border: 3px solid #555;
+    transition: 00.3s;
+  }
+
+input[type=text] {
+    width: 40%;
+    height: 30px;
 }
 
-#organizer from {
-    width: 60%;
+select[id=to] {
+    width: 40%;
+    height: 30px;
+}
+
+#form_title{
+    display: flex;
+    padding-top: 2%;
+    justify-content: center;
+
+}
+
+#organizer {
+    padding-left: 25%;
+    padding-right: 25%;
+    padding-top: 70px;
+}
+
+#date {
+    padding-top: 25px;
+}
+
+#mode {
+    padding-top: 25px;
+}
+
+#mode_buttons {
+    padding-left: 15px;
+    padding-top: 10px;
 }

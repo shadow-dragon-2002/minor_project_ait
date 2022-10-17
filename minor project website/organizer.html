@@ -6,6 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Minor Project</title>
         <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <script src="./js/jquery-3.6.0.js"></script>
+        <script src="./js/bootstrap.js"></script>
     </head>
 
     <body>
@@ -29,15 +33,60 @@
             <h4>Travel around on your own terms.</h4>
         </section>
 
+        <section id="form_title">
+            <h2><u>Create your preffered trip</u> </h2>
+        </section>
+
         <section id="organizer">
-            <Label for="from">From</Label>
-            <input type="text" id="from" name="startinglocation" placeholder="Location">
-            <label for="to">To</label>
-            <select name="destination" id="to">
-                <option value="dharamshala">Dharamshala</option>
-                <option value="jaipur">Jaipur</option>
-            </select>
-            
+            <div class="row">
+                <div class="col" id="start">
+                    <label for="start"><b>From: </b></label>
+                  <input type="text" class="form-control" id="start" placeholder="Location" aria-label="start-Location">
+                </div>
+                <div class="col" id="desti">
+                   <label for="dest"><b>Destination: </b></label> 
+                  <input type="text" class="form-control" id ="dest" placeholder="Location" aria-label="end-Location">
+                </div>
+            </div>
+            <Div class="row" id="date">
+                <div class="col" id="departure">
+                    <label for="start"><b>Departure: </b></label>
+                    <input type="date" class="form-control" name="depart_date" id="departure">
+                </div>
+                <div class="col" id="return">
+                    <label for="end"><b>Return:</b></label>
+                    <input type="date" class="form-control" name="end_date" id="return">
+                </div>
+            </Div>
+            <div id="mode">
+                <label for="mode"><b>Mode of transport:</b></label>
+                <div id="mode_buttons">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="car">
+                        <label class="form-check-label" for="car">
+                        By Car
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="bus">
+                        <label class="form-check-label" for="bus">
+                        By Bus
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="plane">
+                        <label class="form-check-label" for="plane">
+                        By Flight
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="train">
+                        <label class="form-check-label" for="train">
+                        By Train
+                        </label>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <script src="Script.js"></script>
