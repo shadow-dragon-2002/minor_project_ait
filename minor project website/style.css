@@ -35,6 +35,61 @@ P {
     margin: 15px 0 20px 0;
 }
 
+
+/* CSS */
+
+.button-84 {
+    margin-left: 700px;
+    align-items: center;
+    background-color: initial;
+    background-image: linear-gradient(#464d55, #25292e);
+    border-radius: 8px;
+    border-width: 0;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .1),0 3px 6px rgba(0, 0, 0, .05);
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: expo-brand-demi,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 18px;
+    height: 52px;
+    justify-content: center;
+    line-height: 1;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all 150ms;
+    vertical-align: baseline;
+    white-space: nowrap;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-84:hover {
+  box-shadow: rgba(0, 1, 0, .2) 0 2px 8px;
+  opacity: .85;
+}
+
+.button-84:active {
+  outline: 0;
+}
+
+.button-84:focus {
+  box-shadow: rgba(0, 0, 0, .5) 0 0 0 3px;
+}
+
+@media (max-width: 420px) {
+  .button-84 {
+    height: 48px;
+  }
+}
+
 .section-p1 {
     padding: 40px 80px;
 }
@@ -87,6 +142,8 @@ P {
     box-shadow: #3c4fe0 0 3px 7px inset;
     transform: translateY(2px);
   }
+
+/* body */
 
 body {
     width: 100%;
@@ -319,4 +376,116 @@ select[id=to] {
 
 #booking_title h1 {
     color: #08ecdd;
+}
+
+#booking_details {
+    columns: 2;
+    padding-left: 27%;
+}
+
+#booking_details h4 {
+    color: #1b8b53;
+}
+
+#booking_details p {
+    padding-left: 1%;
+    font-size: 19px;
+    color: #2583ee;
+}
+
+#map {
+    display: flex;
+    justify-content: center;
+}
+
+#map h6 {
+    display: flex;
+    justify-content: center;
+    padding-top: 1%;
+    color: #2583ee;
+}
+
+#confirm {
+   display: flex;
+   justify-content: center;
+}
+
+#further {
+    display: flex;
+    padding-left: 28%;
+}
+
+#further h4 {
+    color: #1b8b53;
+}
+
+#further p {
+    margin: 0 0 0 0;
+    color: #2583ee;
+}
+
+#title_confirm h1{
+    color: #08ecdd;
+    padding-top: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+#booking_confirmed {
+    padding-left: 18%;
+    padding-right: 18%;
+}
+
+#booking_confirmed h4 {
+    padding-top: 3%;
+    color: #1b8b53;
+}
+
+/* about us */
+
+#about {
+    background-image: url("img/lake.jpeg");
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 22%;
+    padding-right: 22%;
+}
+
+#about p {
+    color: #1a1a1a;
+}
+
+/* contact us */
+
+#contact_title {
+    display: flex;
+    justify-content: center;
+    padding-top: 6%;
+}
+
+#contact {
+    background-image: url(img/contact.jpeg);
+    height: 100vh;
+    width: 100%;
+}
+
+#details {
+    padding-left: 32%;
+    padding-top: 3%;
+}
+
+#details h4 {
+    padding-left: 10%;
+}
+
+/* Reviews */
+
+#coming_soon {
+    display: flex;
+    justify-content: center;
+    padding-top: 18%;
 }
